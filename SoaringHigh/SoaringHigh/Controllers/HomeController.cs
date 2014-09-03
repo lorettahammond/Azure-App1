@@ -24,10 +24,39 @@ namespace SoaringHigh.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your app description page.";
+            ViewBag.Message = "Soaring High.";
 
             return View();
         }
+
+        public ActionResult History()
+        {
+            ViewBag.Message = "History.";
+
+            return View();
+        }
+
+        public ActionResult Events()
+        {
+            ViewBag.Message = "Events.";
+
+            return View();
+        }
+
+        public ActionResult Rides()
+        {
+            ViewBag.Message = "Ride Vendors.";
+
+            return View();
+        }
+
+        public ActionResult LaunchCriteria()
+        {
+            ViewBag.Message = "LaunchCriteria.";
+
+            return View();
+        }
+
 
         public ActionResult Contact()
         {
@@ -35,5 +64,6 @@ namespace SoaringHigh.Controllers
 
             return View();
         }
+
     }
 }
