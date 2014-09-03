@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div style="background-color:#00e8ff" class="navbar navbar-inverse navbar-fixed-top">
+    @*<div style="background-color:#00e8ff" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -41,7 +41,32 @@
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
-    </div>
+    </div>*@
+
+    <header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">@Html.ActionLink("Soaring High", "Index", "Home")</p>
+            </div>
+            <div class="float-right">
+                <section id="login">
+                    @Html.Partial("_LoginPartial")
+                </section>
+                <nav>
+                    <ul id="menu">
+                        <<li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("History", "History", "Home")</li>
+                        <li>@Html.ActionLink("Events", "Events", "Home")</li>
+                        <li>@Html.ActionLink("Rides", "Rides", "Home")</li>
+                        <li>@Html.ActionLink("LaunchCriteria", "LaunchCriteria", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
 
     <div class="container body-content">
         @RenderBody()
